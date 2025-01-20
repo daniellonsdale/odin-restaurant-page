@@ -19,7 +19,7 @@ body{
 }
 
 header{
-    background-color: aqua;
+    background-color: rgb(24, 24, 24);
     
     min-height: 20dvh;
     display: flex;
@@ -36,6 +36,7 @@ header h1{
     font-size: 3rem;
     font-family: 'pacificoregular', serif;
     word-spacing: 1rem;
+    color: white;
 }
 
 header nav{
@@ -50,4 +51,32 @@ header button{
     font-size: 1.25rem;
     width: 5rem;
     padding: .25rem 0;
+}
+
+#content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 10dvh;
+    background-color: rgb(16,16,16);
+
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#content .restaurant-info{
+    grid-column: 2 / 3;
+    color: white;
+}
+
+#content img{
+    max-width: 100%;
+    height: auto;
+    grid-column: 3 / 4;
+}
+
+#content h1{
+    font-size: 3rem;
+}
+
+#content h3{
+    font-size: 1.25rem;
 }
