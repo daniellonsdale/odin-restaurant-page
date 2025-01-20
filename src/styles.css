@@ -58,8 +58,7 @@ header button:hover{
 
 #content{
     display: grid;
-    grid-template-columns: minmax(5vw, 1fr) 1fr 1fr minmax(5vw, 1fr);
-    grid-template-rows: 78vh;
+    grid-template-columns: minmax(5vw, 3fr) 2fr 30vw minmax(5vw, 3fr);
     padding-top: 3vh;
     background-color: rgb(16,16,16);
 
