@@ -63,7 +63,6 @@ header button:hover{
 #content{
     display: grid;
     grid-template-columns: minmax(5vw, 3fr) 2fr 30vw minmax(5vw, 3fr);
-    grid-template-rows: 77vh;
     padding-top: 3vh;
     background-color: rgb(16,16,16);
     min-height: max-content;
