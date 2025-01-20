@@ -62,10 +62,10 @@ header button:hover{
 
 #content{
     display: grid;
-    grid-template-columns: minmax(5vw, 3fr) 2fr 30vw minmax(5vw, 3fr);
+    grid-template-columns: minmax(5vw, 3fr) 2fr 2fr minmax(5vw, 3fr);
+    grid-template-rows: auto;
     padding-top: 3vh;
     background-color: rgb(16,16,16);
-    min-height: max-content;
 
     font-family: 'Courier New', Courier, monospace;
 }
@@ -76,8 +76,8 @@ header button:hover{
 }
 
 #content img{
-    max-width: 100%;
-    height: auto;
+    width: auto;
+    max-height: 77vh;
     grid-column: 3 / 4;
 }
 
