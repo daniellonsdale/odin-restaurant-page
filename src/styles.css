@@ -14,8 +14,10 @@
     font-style: normal;
 }
 
-html, body{
+body{
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header{
@@ -61,11 +63,15 @@ header button:hover{
 }
 
 #content{
+    background-color: rgb(16,16,16);
+    flex-grow: 1;
+}
+
+#content .home-container{
     display: grid;
     grid-template-columns: minmax(5vw, 3fr) 2fr 2fr minmax(5vw, 3fr);
     grid-template-rows: auto;
     padding-top: 3vh;
-    background-color: rgb(16,16,16);
 
     font-family: 'Courier New', Courier, monospace;
 }
@@ -87,4 +93,42 @@ header button:hover{
 
 #content .restaurant-info-h3{
     font-size: 1.25rem;
+}
+
+/* MENU PAGE */
+
+#content .menu-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-auto-rows: 1fr;
+    margin: 5vh 10vw 5vh 10vw;
+    padding: 2rem;
+    border: white solid 3px;
+    border-radius: 2rem;
+    row-gap: 12px;
+}
+
+.menu-card img{
+    max-width: 80%;
+}
+
+.menu-card{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.menu-card h1{
+    font-size: 2.5rem;
+}
+
+.menu-card h3{
+    font-size: 1.5rem;
+}
+
+.menu-card p{
+    max-width: 80%
 }
