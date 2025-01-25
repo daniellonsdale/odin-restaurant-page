@@ -2,6 +2,8 @@ import homeImageSrc from './images/burger-hands.jpg';
 
 export function initLoad(){
     const contentDiv = document.querySelector('#content');
+    const homeContainer = document.createElement('div');
+    homeContainer.classList.add('home-container');
 
     const restaurantInfoDiv = document.createElement('div');
     restaurantInfoDiv.classList.add('restaurant-info');
@@ -19,6 +21,7 @@ export function initLoad(){
     homeImage.alt = 'man throwing a burger up to display all the parts';
     homeImage.classList.add('home-image');
 
-    contentDiv.appendChild(restaurantInfoDiv);
-    contentDiv.appendChild(homeImage);
+    homeContainer.appendChild(restaurantInfoDiv);
+    homeContainer.appendChild(homeImage);
+    contentDiv.appendChild(homeContainer);
 }
