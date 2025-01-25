@@ -59,7 +59,26 @@ export function menuLoad(){
     fullyLoadedCard.appendChild(fullyLoadedCardP);
     fullyLoadedCard.appendChild(fullyLoadedCardH3);
 
+    const baconCheeseburgerCard = document.createElement('div');
+    baconCheeseburgerCard.classList.add('menu-card');
+    baconCheeseburgerCard.classList.add('bacon-cheesebrger');
+    const baconCheeseburgerCardH1 = document.createElement('h1');
+    baconCheeseburgerCardH1.textContent = 'Bacon Cheeseburger';
+    const baconCheeseburgerCardImage = document.createElement('img');
+    baconCheeseburgerCardImage.src = baconCheeseburgerImageSource;
+    baconCheeseburgerCardImage.alt = 'cheeseburger with bacon';
+    const baconCheeseburgerCardP = document.createElement('p');
+    baconCheeseburgerCardP.textContent = 'A classic cheeseburger with bacon on top for a bit of crunchy, smokey delight';
+    const baconCheeseburgerCardH3 = document.createElement('h3');
+    baconCheeseburgerCardH3.textContent = '$7.99';
+    baconCheeseburgerCard.appendChild(baconCheeseburgerCardH1);
+    baconCheeseburgerCard.appendChild(baconCheeseburgerCardImage);
+    baconCheeseburgerCard.appendChild(baconCheeseburgerCardP);
+    baconCheeseburgerCard.appendChild(baconCheeseburgerCardH3);
+
     menuContainer.appendChild(hamburgerCard);
     menuContainer.appendChild(cheeseburgerCard);
+    menuContainer.appendChild(fullyLoadedCard);
+    menuContainer.appendChild(baconCheeseburgerCard);
     contentDiv.appendChild(menuContainer);
 }
