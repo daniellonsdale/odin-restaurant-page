@@ -8,3 +8,13 @@ const menuBtn = document.querySelector('#menu');
 const aboutBtn = document.querySelector('#about');
 
 initLoad();
+
+homeBtn.addEventListener('click', () => {
+    contentDiv.replaceChildren();
+    initLoad();
+});
+
+menuBtn.addEventListener('click', () => {
+    contentDiv.replaceChildren();
+    menuLoad();
+});
