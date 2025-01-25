@@ -25,5 +25,8 @@ export function menuLoad(){
     hamburgerCard.appendChild(hamburgerCardP);
     hamburgerCard.appendChild(hamburgerCardH3);
 
-    
+
+
+    menuContainer.appendChild(hamburgerCard);
+    contentDiv.appendChild(menuContainer);
 }
