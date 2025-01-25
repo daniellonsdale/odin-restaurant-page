@@ -75,16 +75,16 @@ header button:hover{
     color: white;
 }
 
-#content img{
+#content .home-image{
     width: auto;
     max-height: 77vh;
     grid-column: 3 / 4;
 }
 
-#content h1{
+#content .restaurant-info-h1{
     font-size: 3rem;
 }
 
-#content h3{
+#content .restaurant-info-h3{
     font-size: 1.25rem;
 }
