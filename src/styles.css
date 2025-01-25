@@ -132,3 +132,13 @@ header button:hover{
 .menu-card p{
     max-width: 80%
 }
+
+/* ABOUT */
+
+#content .about-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    color: white;
+}
