@@ -25,8 +25,24 @@ export function menuLoad(){
     hamburgerCard.appendChild(hamburgerCardP);
     hamburgerCard.appendChild(hamburgerCardH3);
 
-
+    const cheeseburgerCard = document.createElement('div');
+    cheeseburgerCard.classList.add('menu-card');
+    cheeseburgerCard.classList.add('cheeseburger');
+    const cheeseburgerCardH1 = document.createElement('h1');
+    cheeseburgerCardH1.textContent = 'Classic Cheeseburger';
+    const cheeseburgerCardImage = document.createElement('img');
+    cheeseburgerCardImage.src = cheeseburgerImageSource;
+    cheeseburgerCardImage.alt = 'cheeseburger';
+    const cheeseburgerCardP = document.createElement('p');
+    cheeseburgerCardP.textContent = 'A classic cheeseburger with lettuce, tomato, and your choice of condiments';
+    const cheeseburgerCardH3 = document.createElement('h3');
+    cheeseburgerCardH3.textContent = '$6.99';
+    cheeseburgerCard.appendChild(cheeseburgerCardH1);
+    cheeseburgerCard.appendChild(cheeseburgerCardImage);
+    cheeseburgerCard.appendChild(cheeseburgerCardP);
+    cheeseburgerCard.appendChild(cheeseburgerCardH3);
 
     menuContainer.appendChild(hamburgerCard);
+    menuContainer.appendChild(cheeseburgerCard);
     contentDiv.appendChild(menuContainer);
 }
