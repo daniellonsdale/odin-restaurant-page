@@ -99,13 +99,12 @@ header button:hover{
 
 #content .menu-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
     margin: 5vh 10vw 5vh 10vw;
     padding: 2rem;
     border: white solid 3px;
     border-radius: 2rem;
-    row-gap: 12px;
+    row-gap: 24px;
 }
 
 .menu-card img{
@@ -122,11 +121,12 @@ header button:hover{
 }
 
 .menu-card h1{
-    font-size: 2.5rem;
+    font-size: 2.25rem;
+    text-align: center;
 }
 
 .menu-card h3{
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .menu-card p{
