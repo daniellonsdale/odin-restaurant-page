@@ -42,6 +42,23 @@ export function menuLoad(){
     cheeseburgerCard.appendChild(cheeseburgerCardP);
     cheeseburgerCard.appendChild(cheeseburgerCardH3);
 
+    const fullyLoadedCard = document.createElement('div');
+    fullyLoadedCard.classList.add('menu-card');
+    fullyLoadedCard.classList.add('fully-loaded-cheeseburger');
+    const fullyLoadedCardH1 = document.createElement('h1');
+    fullyLoadedCardH1.textContent = 'Fully Loaded Cheeseburger';
+    const fullyLoadedCardImage = document.createElement('img');
+    fullyLoadedCardImage.src = fullyLoadedImageSource;
+    fullyLoadedCardImage.alt = 'cheeseburger with many toppings';
+    const fullyLoadedCardP = document.createElement('p');
+    fullyLoadedCardP.textContent = 'A classic cheeseburger taken to the next level. Our famous fully loaded cheeseburger includes letteuce, tomato, pickles, onions, and our world famous special sauce';
+    const fullyLoadedCardH3 = document.createElement('h3');
+    fullyLoadedCardH3.textContent = '$8.99';
+    fullyLoadedCard.appendChild(fullyLoadedCardH1);
+    fullyLoadedCard.appendChild(fullyLoadedCardImage);
+    fullyLoadedCard.appendChild(fullyLoadedCardP);
+    fullyLoadedCard.appendChild(fullyLoadedCardH3);
+
     menuContainer.appendChild(hamburgerCard);
     menuContainer.appendChild(cheeseburgerCard);
     contentDiv.appendChild(menuContainer);
