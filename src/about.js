@@ -89,4 +89,5 @@ export function aboutLoad(){
     locationContainerIFrame.appendChild(locationContainerIFrameAnchor);
     locationContainer.appendChild(locationContainerIFrame);
     aboutContainer.appendChild(locationContainer);
+    contentDiv.appendChild(aboutContainer);
 }
