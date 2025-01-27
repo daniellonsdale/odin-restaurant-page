@@ -135,10 +135,42 @@ header button:hover{
 
 /* ABOUT */
 
-#content .about-wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5vh;
+#content .about-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 5vh 25vw 5vh 25vw;
     color: white;
+}
+
+.about-container .hours-container{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.about-container h2{
+    font-size: 2rem;
+}
+
+.hours-container .hours-list{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    list-style: none;
+}
+
+.hours-list li{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hours-list li:nth-child(odd){
+    background-color: rgb(42, 42, 42);
+}
+
+.location-container iframe{
+    width: 100%;
+    height: 100%;
 }
